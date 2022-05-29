@@ -45,12 +45,11 @@ export default function Topbar() {
              
             </li>
           </ul>
-        )
         <i className="topSearchIcon fas fa-search"></i>
       </div>
     </div>
   );
-}
+  }
 
 
 

@@ -1,7 +1,11 @@
 import './homepage.css'
+import Header from '../../components/header/Header'
 
 export default function HomePage() {
   return (
-    <div className=''>HomePage</div>
+    <div className='home'>
+        <Header />
+        HomePage
+    </div>
   )
 }

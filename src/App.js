@@ -1,12 +1,13 @@
 import Topbar from "./components/topbar/TopBar";
-import Header from './components/header/Header'
+import HomePage from "./pages/homepage/HomePage";
+
 
 
 function App() {
   return (
   <>
       <Topbar />
-      <Header />
+      <HomePage />
   </>
        
   );

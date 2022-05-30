@@ -9,7 +9,7 @@ export default function Header() {
       </div>
       <img
         className="headerImg"
-        src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        src="https://raw.githubusercontent.com/shivam66151/Weather-App/71a7d5d232cebc9e0879d1e325355d125db7b0d7/evergreen.svg"
         alt=""
       />
     </div>

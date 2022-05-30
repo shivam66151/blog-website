@@ -46,7 +46,7 @@
   }
   
   .topListItem:hover{
-      color: gray;
+      color: rgb(128, 128, 128);
   }
   
   .topImg {

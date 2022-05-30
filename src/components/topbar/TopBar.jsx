@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import "./topbar.css";
 
 export default function Topbar() {
- 
+ const currentUser = false;
   return (
     <div className="top">
       <div className="topLeft">
@@ -13,38 +14,48 @@ export default function Topbar() {
       <div className="topCenter">
         <ul className="topList">
           <li className="topListItem">
+          <Link className="link" to='/'>
           HOME
-          </li>
-          <li className="topListItem">ABOUT</li>
-          <li className="topListItem">CONTACT</li>
-          <li className="topListItem">
-            WRITE
+          </Link>
           </li>
           <li className="topListItem">
-          LOGOUT
+          ABOUT
+         </li>
+          <li className="topListItem">
+          CONTACT
           </li>
+          <li className="topListItem">
+          <Link className="link" to='/write'>
+          WRITE
+          </Link>
+          </li>
+          {currentUser && <li className="topListItem">LOGOUT</li>}
         </ul>
       </div>
       <div className="topRight">
-       
+      {
+        currentUser ? (
+          <Link className="link" to='/settings'>
             <img
               className="topImg"
               src="https://avatars.githubusercontent.com/u/78584267?v=4"
               alt=""
             />
-        
-          <ul className="topList">
-            <li className="topListItem">
-              
-                LOGIN
-           
-            </li>
-            <li className="topListItem">
-              
-                REGISTER
-             
-            </li>
-          </ul>
+            </Link>
+        ) : 
+        <ul className="topList">
+        <li className="topListItem">
+        <Link className="link" to='/login'>
+          LOGIN
+        </Link>
+        </li>
+        <li className="topListItem">
+        <Link className="link" to='/register' >
+          REGISTER
+          </Link>
+        </li>
+        </ul>
+      }
         <i className="topSearchIcon fas fa-search"></i>
       </div>
     </div>

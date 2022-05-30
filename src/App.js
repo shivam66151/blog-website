@@ -8,7 +8,7 @@ import Settings from './pages/settings/Settings'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 function App() {
-  const currentUser = false;
+  const currentUser = true;
   return (
   <Router>
       <Topbar />  
